@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .quadro{
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    margin: 100px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  button{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  #btnverde{
+    background-color: green;
+
+  }
+
+  #btnazul{
+    background-color: blue;
+  }
+</style>
+<body>
+  <div class="content">
+    <div id="quadr" class="quadro">
+
+    </div>
+    <div class="btns">
+    <button onclick="backazul()" id="btnazul">Azul</button>
+    <button onclick="backverde()" id="btnverde">Verde</button>
+    </div>
+  </div>
+  <script>
+
+    document.getElementById("btnazul");
+    document.getElementById("btverde");
+
+  function backverde(){
+    quadr.style.backgroundColor = "Green";
+  }
+
+  function backazul(){
+    quadr.style.backgroundColor = "blue";
+  }
+
+
+  </script>
+</body>
+</html>
